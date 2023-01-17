@@ -1,8 +1,8 @@
 import "./Features.css"
 import Items from "./items/Items";
-import imageSrcTchat from "../../assets/img/icon-chat.png"
-import imageSrcMoney from "../../assets/img/icon-money.png"
-import imageSrcSecurity from "../../assets/img/icon-security.png"
+import imageSrcTchat from "../../../assets/img/icon-chat.png"
+import imageSrcMoney from "../../../assets/img/icon-money.png"
+import imageSrcSecurity from "../../../assets/img/icon-security.png"
 
 
 function Features() {

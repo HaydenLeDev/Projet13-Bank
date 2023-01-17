@@ -1,13 +1,16 @@
 import './App.css';
-import { BrowserRouter } from "react-router-dom";
-import PublicRoute from './pages/public/PublicRoute';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import PublicRoute from './pages/public/PublicRoute'
+import PrivateRoute from "./pages/private/PrivateRoute"
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <PublicRoute />
+        <Routes>
+          <Route path="/*" element={<PublicRoute />} />
+          <Route path="/user/*" element={<PrivateRoute />} />
+        </Routes>
       </BrowserRouter>
     </div>
   )
