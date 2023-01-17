@@ -1,7 +1,7 @@
 import './Login.css'
-import Form from "../../../components/public/form/Form";
+import Form from "../../../components/auth/form/Form";
 
-function SignIn() {
+function Login() {
   return (
     <main className="main bg-dark">
       <section className="sign-in-content">
@@ -13,4 +13,4 @@ function SignIn() {
   )
 }
 
-export default SignIn;
+export default Login;
