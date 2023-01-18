@@ -2,6 +2,8 @@ import './Login.css'
 import Form from "../../../components/auth/form/Form";
 
 function Login() {
+
+
   return (
     <main className="main bg-dark">
       <section className="sign-in-content">
