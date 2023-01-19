@@ -14,7 +14,6 @@ let logout = () => {
 
 let isLogged = () => {
     let token = localStorage.getItem("token")
-    console.log(!!token)
     return !!token //Renvois toujours un boolen (Si null = false sinon true)
 }
 
@@ -23,5 +22,5 @@ let getToken = () => {
 }
 
 export const accountService = {
-    login, saveToken, logout, isLogged
+    login, saveToken, logout, isLogged, getToken
 }

@@ -1,13 +1,8 @@
 function EditButton(){
 
-    const test = ()=> {
-        console.log("test")
-        
-    }
-
     return(
         <div>
-            <button onClick={test}>
+            <button>
                 TEST
             </button>
         </div>
