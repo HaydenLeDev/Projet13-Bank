@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Form.css'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import { accountService } from '../../../_services/account.service'
 
 
 function Form() {
@@ -25,13 +25,12 @@ function Form() {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    axios.post("http://localhost:3001/api/v1/user/login", credentials)
+    accountService.login(credentials)
     .then(res => {
-      console.log(res)
-      navigate('/user/dashboard')
+      accountService.saveToken(res.data.body.token) //on ajoute le token si co reussi
+      navigate('/user/profile')
     })
     .catch(error => console.log(error))
-    console.log(credentials, checked)
   }
 
 

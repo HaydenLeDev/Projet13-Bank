@@ -7,7 +7,7 @@ function PrivateRoute() {
     return(
         <Routes>
           <Route element={<PrivateLayout />}>
-            <Route path="dashboard" element={<User />} />
+            <Route path="profile" element={<User />} />
           </Route>
         </Routes>
     ) 

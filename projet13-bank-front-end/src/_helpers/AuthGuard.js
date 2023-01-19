@@ -1,9 +1,9 @@
 import { Navigate } from "react-router"
+import { accountService } from "../_services/account.service"
 
 function AuthGard( {children} ){
-    let logged = false 
-    
-    if (!logged){
+
+    if (!accountService.isLogged()){
         return <Navigate to="/login" />
     }
     return children
