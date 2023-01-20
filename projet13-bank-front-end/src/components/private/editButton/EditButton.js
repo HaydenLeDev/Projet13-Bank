@@ -1,9 +1,11 @@
+import "./EditButton.css"
+
 function EditButton(){
 
     return(
-        <div>
-            <button>
-                TEST
+        <div className="EditButton">
+            <button className="edit-button">
+                Edit Name
             </button>
         </div>
     )
