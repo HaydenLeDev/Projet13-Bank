@@ -4,6 +4,10 @@ let login = (credential) => {
     return Axios.post("/user/login", credential)
 }
 
+let changeName = (name) => {
+    return Axios.put("/user/profile", name)
+}
+
 let saveToken = (token) => {
     localStorage.setItem("token", token)
 }
@@ -22,5 +26,5 @@ let getToken = () => {
 }
 
 export const accountService = {
-    login, saveToken, logout, isLogged, getToken
+    login, changeName, saveToken, logout, isLogged, getToken
 }

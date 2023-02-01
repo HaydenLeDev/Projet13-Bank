@@ -1,12 +1,13 @@
 import "./EditButton.css"
+import { Link } from 'react-router-dom'
 
-function EditButton(){
+function EditButton() {
 
-    return(
+    return (
         <div className="EditButton">
-            <button className="edit-button">
+            <Link to="/user/edit" className="edit-button">
                 Edit Name
-            </button>
+            </Link>
         </div>
     )
 }
