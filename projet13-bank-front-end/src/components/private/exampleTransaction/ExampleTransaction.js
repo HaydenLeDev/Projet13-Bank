@@ -2,7 +2,7 @@ import './ExampleTransaction.css'
 
 function ExampleTransaction() {
     return (
-        <>
+        <section className="ExampleTransaction">
         <section className="account">
         <div className="account-content-wrapper">
           <h3 className="account-title">Argent Bank Checking (x8349)</h3>
@@ -33,7 +33,7 @@ function ExampleTransaction() {
           <button className="transaction-button">View transactions</button>
         </div>
       </section>
-      </>
+      </section>
     )
 }
 
