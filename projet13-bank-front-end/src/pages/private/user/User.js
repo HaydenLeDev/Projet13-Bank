@@ -4,6 +4,7 @@ import { userService } from "../../../_services"
 import { useDispatch, useSelector } from "react-redux"
 import { setUserData } from "../../../feature/user.slice"
 import { useEffect, useRef } from "react"
+import ExampleTransaction from "../../../components/private/exampleTransaction/ExampleTransaction";
 
 function User() {
   const flag = useRef(false)
@@ -14,7 +15,6 @@ function User() {
     if (flag.current === false) {
       userService.getDataUser()
         .then(res => {
-          console.log(res.data.body)
           dispatch(setUserData(res.data.body))
         })
         .catch(error => console.log(error))
@@ -33,6 +33,7 @@ function User() {
       <main className="main bg-dark">
         <Title firstName={user.firstName} lastName={user.lastName} />
         <EditButton />
+        <ExampleTransaction />
       </main>
     )
   }
