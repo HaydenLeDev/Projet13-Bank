@@ -22,9 +22,7 @@ function EditFrom() {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        console.log(name)
         accountService.changeName(name).then(res => {
-            console.log(res)
             dispatch(changeName(name))
         }) .catch(error => console.log(error))
         navigate("/user/profile")
