@@ -11,7 +11,6 @@ export const userSlice = createSlice({
         },
 
         changeName: (state, action) => {
-            console.log(action)
             state.user.firstName = action.payload.firstName
             state.user.lastName = action.payload.lastName
         }

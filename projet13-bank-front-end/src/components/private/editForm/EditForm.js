@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import { accountService, userService } from '../../../_services'
-import { useDispatch, useSelector } from 'react-redux'
+import { accountService } from '../../../_services'
+import { useDispatch } from 'react-redux'
 import { changeName } from '../../../feature/user.slice'
 
 function EditFrom() {
